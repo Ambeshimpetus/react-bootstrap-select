@@ -7,8 +7,8 @@ var React = require('react');
 React.Bootstrap = require('react-bootstrap');
 
 var $ = require('jQuery');
-
-var BootstrapSelect = React.createClass({displayName: 'BootstrapSelect',
+var createReactClass = require('create-react-class');
+var BootstrapSelect = createReactClass({
   getInitialState: function () {
     return {
       open: false
